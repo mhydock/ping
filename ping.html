@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+@import url("dark.css");
+</style>
+
+<script language="javascript" type="text/javascript" src="ping.js"></script>
+</head>
+
+<body>
+<div class="header">PING</div>
+<svg version="1.1" id="gameview" width="800" height="600">
+<text id="hiscore" x="0" y="30">Hiscore: </text>
+<text id="score" x="600" y="30">Score: </text>
+<g id="cartesian" transform="translate(400,300) scale(1,-1)">
+<path id="spiral" d="m 0 0"/>
+<rect id="paddle" x="-10" y="-50" rx="5" ry="5" width="20" height="100" />
+<line id="pad_norm" />
+<line id="ball_dir" />
+<circle id="ball" x="0" y="0" r="5" />
+</g>
+
+<g id="debug" transform="translate(695,520) scale(.25,-.25)">
+<rect id="ghost_paddle" x="-10" y="-50" rx="5" ry="5" width="20" height="100" />
+<circle id="ghost_ball" x="0" y="0" r="5" />
+<rect x="-400" y="-300" width="800" height="600" fill=444444 stroke=none opacity=.5 />
+</g>
+</svg>
+<br><br>
+<div style="font-size:0.6em">This game designed/programmed by M Matthew Hydock &copy; 2013.</div>
+</body>
+</html>
